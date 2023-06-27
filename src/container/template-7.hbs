@@ -1,0 +1,71 @@
+{{#with header}}
+<div class="header">
+	<div class="logo">
+		<span class="badge text-bg-purple ">{{brandName}}</span>
+	</div>
+	<div class="nav">
+		{{#each links}}
+		<a href="{{url}}" class="nav_link">{{text}}</a>
+		{{/each}}
+	</div>
+</div>
+<div class="header_2">
+	{{#with ad}}
+	<p class="header_2_text"><a class="header_2_big">Ad</a> {{text}} {{url}}</p>
+	{{/with}}
+	<p class="header_2_online">Users online:{{userOnline}}</p>
+</div>
+{{/with}}
+
+<section class="block_hero">
+	<div class="hero">
+		{{#with hero}}
+		<h1 class="hero_title">{{title}}</h1>
+		<p class="hero_text">{{description}}</p>
+		{{#with button}}
+		<a class="button" href="{{url}}">{{text}}</a>
+		{{/with}}
+		{{/with}}
+	</div>
+</section>
+
+<section class="block_about">
+	{{#with about}}
+	<h4 class="about_heading">{{heading}}</h4>
+	<p class="about_info">{{info}}</p>
+	{{/with}}
+</section>
+
+<div class="hit">
+	<h4 class="hit_header" href="#">Our Articles</h4>
+	<a class="hit_button" href="#">View All</a>
+</div>
+
+
+<div class="articles">
+	{{#each articles}}
+
+	<div class="articles_position">
+
+		<img src="{{photo}}" class="articles_img">
+
+		{{#if isNew}}<div class="articles_new badge text-bg-warning">New</div>{{/if}}
+
+		<h6 class="articles_title">{{name}}</h6>
+		<p class="articles_text">{{description}}</p>
+		<a class="articles_button" href="#">Read All</a>
+	</div>
+	{{/each}}
+</div>
+
+
+{{#with footer}}
+<div class="footer">
+	<div class="footer_nav">
+		{{#each pages}}
+		<a href="{{path}}" class="footer_link">{{name}}</a>
+		{{/each}}
+	</div>
+	<strong class="footer_copyright">{{copyright}}</strong>
+</div>
+{{/with}}
