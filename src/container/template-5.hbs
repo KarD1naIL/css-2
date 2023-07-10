@@ -28,27 +28,35 @@
 
 	{{#with form}}
 	<div class="form">
-			<h2 class="form_title">{{title}}</h2>
+		<h2 class="form_title">{{title}}</h2>
 
-			<div class="form_input_list">
-				{{#each inputs}}
-					<input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}" id="form-input-{{id}}">
-				{{/each}}
-			</div>
+		<div class="form_input_list">
+			{{#each inputs}}
+			<input type="{{type}}" placeholder="{{placeholder}}" class="form_input" name="{{name}}"
+				id="form-input-{{id}}">
+			{{/each}}
+		</div>
 
-			<div class="form_checkbox">
-				<input type="checkbox" name="{{checkbox.name}}">
-				<label>{{checkbox.label}}</label>
+		<div class="form_checkbox">
+			<input type="checkbox" name="{{checkbox.name}}">
+			<label>{{checkbox.label}}</label>
 
-			</div>
+		</div>
 
-			<button class="form_button">{{button}}</button>
-			<p class="form_info">{{info}}</p>
+		<button class="form_button">{{button}}</button>
+		<p class="form_info">{{info}}</p>
 	</div>
 	{{/with}}
 
-</main>
 
+	{{#each advantages}}
+	<div class="advantage">
+		<strong>{{title}}</strong>
+		<p>{{text}}</p>
+	</div>
+	{{/each}}
+
+</main>
 
 <div class="advantages">
 	{{#each advantages}}
@@ -58,8 +66,6 @@
 	</div>
 	{{/each}}
 </div>
-
-
 
 <footer class="page_block" id="test">
 	<div class="footer">
