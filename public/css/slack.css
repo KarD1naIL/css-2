@@ -337,16 +337,27 @@ body {
 }
 
 .img_deliveroo {
-  position: absolute;
-  left: 350px;
-  top: 100;
-
-  width: 550px;
-  height: 220px;
   float: left;
 }
 
 .deliveroo_description {
-  float: left;
-  margin-right: 20px;
+  font-size: var(--size-5);
+  width: 380px;
+  line-height: 150%;
+}
+
+.PS {
+  font-size: var(--size-2);
+}
+
+.modul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.top {
+  position: relative;
+  left: 400px;
 }
