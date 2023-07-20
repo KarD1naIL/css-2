@@ -294,9 +294,17 @@ body {
     }
   }
 }
+.page_section_2 {
+  display: flex;
+  justify-content: center;
+} 
+
+.page_section_light_2 {
+  background-color: var(--color-light);
+}
 
 .page_content2 {
-  padding: 350px;
+padding-right: 100px;
   display: grid;
 }
 
@@ -310,19 +318,27 @@ body {
   background-image: url('/img/what.jpg');
   background-repeat: no-repeat;
   background-position: top left;
+  background-position-x: 10%;
+
 }
 
 .feature_title2 {
   font-size: var(--size-6);
+  margin-left: auto;
 }
 
-.features_description {
+.feature_description2 {
   font-size: var(--size-2);
+  margin-left: auto;  
+  margin-bottom: 50px;
 }
 
 .features_grid_6 {
   display: grid;
-
+  width: 70%;
+  margin-left: auto;
+  
+  
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
 
@@ -336,6 +352,26 @@ body {
   grid-row: 1 / 4;
 }
 
+.page_section {
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  
+}
+
+.modul {
+  display: flex;
+  width: 1020px;
+  align-items: center;
+  
+  gap: 38px;
+
+}
+
+.block {
+  gap: var(--spacing-5)
+}
+
 .img_deliveroo {
   float: left;
 }
@@ -344,20 +380,94 @@ body {
   font-size: var(--size-5);
   width: 380px;
   line-height: 150%;
+  padding-bottom: 20px;
 }
 
 .PS {
   font-size: var(--size-2);
 }
 
-.modul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-}
+
 
 .top {
   position: relative;
   left: 400px;
 }
+
+.img_2 {
+  padding-bottom: 20px;
+
+}
+
+.page_section_3 {
+  display: flex;
+justify-content: center;
+align-items: flex-start;
+align-self: stretch;
+padding-top: 50px;
+} 
+
+.ok {
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 100px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 75px;
+  
+}
+
+.title3 {
+  padding-bottom: 40px;
+  font-size: 32px;
+  color: var(--color-black);
+}
+
+.img1 {
+  width: 285px;
+height: 420px;
+  background: #FFF;
+box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
+
+}
+
+.img_title {
+  font-size: var(--size-1);
+  line-height: 18px; 
+  color: #454245;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 700;
+  padding: 7px;
+}
+
+.img_text_2 {
+  color: var(--color-black);
+  font-size: var(--size-4);
+  font-weight: 700;
+  line-height: 150%;  
+  padding: 7px;
+  
+  
+}
+
+.img_footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  
+  color: #1264A3;
+
+  font-size: var(--size-1);
+
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 1px;
+  
+}
+
+
