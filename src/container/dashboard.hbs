@@ -56,9 +56,7 @@
 				</a>
 
 				<div class="relative click">
-					<div class="field field--select">
-						<span class="text text--light">Chosee...</span>
-					</div>
+
 					<select class="field__select">
 						<option value="dog">Dog</option>
 						<option value="dog">Dog</option>
@@ -189,31 +187,74 @@
 					</div>
 				</div>
 				<div class="sector">
-					<h5 class="text payment__title">Payment</h5>
-					<div>
-						<div>
-							<div class="form-check">
-								<input name="pay" type="radio" class="form-check-input">
-								<label class="form-check-label">Credit card</label>
+					<div class="">
+						<h5 class="text payment__title">Payment</h5>
+						<div class="payment__radio">
+							<div class="text form__radio">
+								<input name="pay" type="radio">
+								<label>Credit card</label>
 							</div>
-						</div>
-						<div>
-							<div class="form-check">
-								<input name="pay" type="radio" class="form-check-input">
-								<label class="form-check-label">Debit card</label>
-							</div>
-						</div>
-						<div>
-							<div class="form-check">
-								<input name="pay" type="radio" class="form-check-input">
-								<label class="form-check-label">PayPal</label>
-							</div>
-						</div>
 
+							<div class=" text form__radio">
+								<input name="pay" type="radio">
+								<label>Debit card</label>
+							</div>
+
+							<div class=" text form__radio">
+								<input name="pay" type="radio">
+								<label>PayPal</label>
+							</div>
+						</div>
+						<div class="payment__line">
+							<div clas="payment__radio">
+								<p class="payment__name">Name on card</p>
+								<div class="text  field--select ">
+									<input type="text" class="field">
+								</div>
+							</div>
+							<div>
+								<p class="payment__name">Credit card number</p>
+								<div class="text  field--select">
+									<input type="text" class="field">
+								</div>
+							</div>
+							<div>
+								<p class="payment__name">Expiration</p>
+								<div class="text  field--select ">
+									<input type="text" class="field">
+								</div>
+							</div>
+							<div>
+								<p class="payment__name">CVV</p>
+								<div class="text  field--select">
+									<input type="text" class="field">
+								</div>
+							</div>
+						</div>
+						<div class="payment__bottom">
+							<div>
+								<p class="payment__name">Country</p>
+								<div class="text field field--select ">
+									<span class="text text--dark">Chosee...</span>
+									<span class=" paymeny-button__icon payment__icon"
+										style="background-image: url('/svg/payment/chosee.svg')">
+								</div>
+							</div>
+							<div>
+								<p class="payment__name">State</p>
+								<div class="text field field--select ">
+									<span class="text text--dark">Chosee...</span>
+									<span class=" paymeny-button__icon payment__icon"
+										style="background-image: url('/svg/payment/chosee.svg')"></span>
+								</div>
+							</div>
+						</div>
+						<div class="button hover click ">
+							<a class=" text payment__button" href="#">Continue to checkout</a>
+						</div>
 					</div>
 				</div>
 			</div>
-
 		</main>
 	</div>
 
